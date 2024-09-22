@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'Chess Sans';
+    src: url('ChessSans-ExtraBold.woff2') format('woff2'),
+        url('ChessSans-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Chess Sans';
+    src: url('ChessSans-Bold.woff2') format('woff2'),
+        url('ChessSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'chessglyph-v3';
+    src: url('chessglyph-v3.woff2') format('woff2'),
+        url('chessglyph-v3.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

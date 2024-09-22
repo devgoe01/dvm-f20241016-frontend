@@ -1,0 +1,705 @@
+@font-face {
+    font-family: 'Chess SansBolder';
+    src: url('/fonts/ChessSans-ExtraBold.woff2') format('woff2'),
+        url('/fonts/ChessSans-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Chess Sans';
+    src: url('/fonts/ChessSans-Bold.woff2') format('woff2'),
+        url('/fonts/ChessSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'chessglyph';
+    src: url('/fonts/chessglyph-v3.woff2') format('woff2'),
+        url('/fonts/chessglyph-v3.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+button{
+    box-shadow: 1px 2px 0px #9ad45f;
+}
+*{
+    color:white;
+    box-sizing: border-box;
+}
+body{
+    width:100%;
+    background-color: #302e2b;
+}
+
+.altsidebar{
+    height:746px;
+    position: fixed;
+    top:9999px;
+    z-index:2;
+}
+
+.sidebarparent{
+    background-color:#262522;
+    width:145px;
+    position: fixed;
+    height: 746px;
+    z-index: 2;
+}
+input,.sidebarbuttons,.bsb{
+    width:145px;
+    padding: 5px;
+}
+.sidebar{
+    float:left;
+    height:372px;
+    margin-bottom: 18px;
+}
+.sidebar img {
+    display: inline-block;
+    height:372px
+}
+.sidebartext{
+    display:flex;
+    flex-direction: column;
+    gap:28px;
+    margin-top:18px;
+    position: relative;
+    left:51px;
+    top:-380px;
+    margin-left: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+}
+.sidebarparent p{
+    opacity: 100% ;
+}
+
+#ccom{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    position: fixed;
+    line-height: 1.1;
+    font-size: 22px;
+    top: 20px;
+    left:52px;
+    margin:0;
+}
+#ccom2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    position: fixed;
+    line-height: 1.1;
+    font-size: 14px;
+    top: 12.5px;
+    left:96px;
+}
+.sidebar div span{
+    line-height: 1.1;
+    font-size: 18px;
+    opacity: 80%;
+}
+.sidebarbuttons{
+    align-content: center;
+    top:0;
+    display: block;
+    margin-top: 8px;
+    margin-left: 5px;
+    margin-right: 8px;
+}
+.sidebarbuttons button{
+    width:125px;
+    margin-top: 8px;
+    height:40px ;
+    border-radius: 5px;
+    background:#302e2b;
+    border: none;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    opacity: 80%;
+}
+.sidebarbuttons :last-child{
+    background: #81b64c
+}
+.search-input {
+    width: 88%; 
+    margin-left: 6%;
+    padding: 10px;
+    border: 5px;
+    border-color: white;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+  }
+  
+  .search-input::placeholder {
+    color: #bbb;
+  }
+  
+.bsb div img,p{
+    display:inline;
+    height:32px !important;
+    opacity: 0.5;
+}
+.bsb p{
+    bottom:10px;
+    position:relative;
+    margin-left:7px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+}
+.bsb{
+    bottom:15px;
+    position: fixed;
+    margin-top: 121px;
+}
+.bsb :first-child img{
+    width:18.87px;
+    height:18.87px;
+}
+.bsb :last-child img{
+    width:17.97px;
+    height:17.97px
+}
+
+
+
+main{
+    display: grid;
+}
+.underc{
+    flex-direction: column;
+    left:30px !important;
+}
+.underc,.areaup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 11px;
+}
+.areaup{
+    margin-left: 3%;
+    margin-bottom: 58px;
+    max-width: 1052px;
+}
+
+.standardboard,.standardboard img{
+    width:496px;
+}
+.cofuparea{
+    padding:0 48px 0 48px;
+    width: 494px;
+    height:529px;
+    flex-direction: column;
+    position: relative;
+}
+.title-index{
+    width:100%;
+    text-align: center;
+    font-size: clamp(16px, 5vw, 44.8px);
+    height:97px;
+    margin-top: 27px;
+    margin-bottom: 25px;
+}
+.title-index span{
+    display: inline-flex;
+    height:48.81px;
+    word-break: keep-all;
+    word-wrap: none;
+    white-space:nowrap;
+}
+.title-index :last-child{
+    display:block
+}
+.areaup div{
+    flex-grow: 1;
+}
+.cofuparea h1{
+    height:97px;
+    margin-top: 27px;
+    margin-bottom: 25px;
+}
+.cofuparea h1 span{
+    font-family: 'Chess Sans';
+    font-weight:700
+}
+
+.indexofuparea{
+    height:33px;
+    margin-bottom: 35px;
+    display: flex;
+    justify-content: space-between;
+}
+.indexinfo{
+    font-family: 'Chess Sans';
+    font-weight:700;
+    color:white
+}
+.indexinfo span{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:100;
+    color:white !important
+}
+
+.playonco{
+    width:100%;
+    height:221px;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+}
+.playonco button{
+    padding:18px 24px 23px 24px ;
+    border: none;
+    width:100%;
+    height: 96px;
+    display:flex;
+    border-radius: 10px;
+}
+.playonco button div{
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    flex-direction: column;
+}
+#playon1,#playco1{
+    font-size: clamp(16px, 5vw, 30px);
+    margin-bottom: 8px;
+    font-family: 'Chess Sans';
+    font-weight:700
+}
+#playon2,#playco2{
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:400;
+}
+
+.playon img {
+    margin-right:26px;
+}
+.playco img {
+    margin-right:24px;
+}
+.playon{
+    background-color:#81b64c;
+}
+.playco{
+    background-color:#454341;
+}
+
+
+.lessons{
+    margin-top: 33px;
+}
+
+.puzzles,.lessons{
+    display:grid;
+    background-color:#262522 ;
+    height:496px;
+    grid-template-columns: 1fr 1fr;
+    padding:38px 48px 48px 48px;
+    position:relative;
+    width: 992px;
+/* 87%*/
+    margin-left: 1%;
+    align-items: center;
+}
+.lessons img{
+    grid-column:1
+}
+.puzzles img{
+    grid-column:2
+}
+.puzzles img,.lessons img{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    display: grid;
+}
+.annaquote{
+    grid-column: 2;
+}
+.annaquote{
+    width:100%
+}
+.hikaruquote{
+    width:100%
+}
+.hikaruquote,.annaquote{
+    display: grid;
+    grid-template-rows:3fr 2fr 4.55fr;
+    justify-items: center;
+    position: relative;
+    height: 120px;
+    justify-content: space-around;
+    padding-bottom:20%;
+    margin-top: 4%;
+    top:-170px;
+    height: 148px;
+    justify-self: center;
+}
+.hikaruquote h2,.annaquote h2{
+    padding:0px 20px 0px 20px;
+    top:3%;
+    width: 100%;
+    text-align: center;
+    font-size: clamp(2.4rem, 3.6vw, 1.2rem);
+    font-family: 'Chess Sans';
+    font-weight:700;
+    margin-bottom: 7%;
+}
+.hikaruquote button,.annaquote button{
+    padding:4px 24px 4px 24px;
+    background-color: #81b64c;
+    width:55%;
+    height:64px;
+    border-radius:1.5rem ;
+    border:none;
+    margin:20px 0px 13.65% 0px;
+    font-family: 'Chess Sans';
+    font-weight:800;
+}
+.quote,.quote2{
+    grid-row:3;
+    margin: 0;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    justify-self: left;
+}
+
+.quote img,.quote2 img{
+    width:148px;
+    height:148px;
+    margin:0;
+    position: relative;
+    left:4%;
+    margin-right:-15px;
+}
+
+.quotechild,.quote2child{
+    height:148px;
+    position: relative;
+    margin-left: 10%;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    padding:10% 0 10% 2%;
+    justify-content: space-between;
+
+}
+.underquote,.underquote2{
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    width:220px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:400
+}
+.underquote,.underquote2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:600
+}
+
+
+
+
+.newsareachild{
+    display: grid;
+    gap:43px 35px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width:986px;
+    align-self: center;
+}
+.newsarea h2{
+    padding-bottom: 50px;
+    width:fit-contents;
+    font-family: 'Chess Sans';
+    font-weight:700
+}
+.newsarea{
+    justify-content: center;
+    align-items: center;
+    margin-left: 3%;
+    padding:30px 0 24px 0px;
+    display:flex;
+    flex-wrap:wrap;
+    line-height: 1.43;
+    width:1030px
+}
+.news{
+    width:470px;
+    height:370px ;
+    align-items: center;
+    text-align: center;
+}
+.news a div img{
+    width: 470px;
+    height:273px;
+}
+.news a h3{
+    text-align:center;
+    word-wrap: normal;
+    margin-top:25px;
+    margin-bottom:0;
+}
+.news h3,.news p{
+    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:600;
+}
+
+.chesstoday{
+    margin-top:0;
+    margin-bottom:24px;
+    padding:0px 24px 4px 24px ;
+    margin:auto;
+    width:138px;
+    height:60px;
+    background-color: #81b64c;
+    border-radius:20px;
+    line-height:1.1428;
+    text-align:center;
+    font-family: 'Chess Sans';
+    font-weight:800;
+}
+
+
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 11px;
+    flex-direction: column;
+    left:30px !important;
+}
+
+.links ul{
+    list-style-position: 0px;
+    list-style-type: "·"
+}
+.links ul li{
+    font-size:13px ;
+    margin-right: 7px;
+    color:#FFFFFF80;
+    display:inline-block;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:600
+}
+
+
+.socialmedia img{
+    width:28px;
+    height:28px;
+    color:gray;
+    fill: gray;
+    
+    font-family: chessglyph;
+    font-weight:700
+}
+.socialmedia{
+    display: flex;
+    align-items: center;
+    gap:15px;
+}
+.socialmedia :nth-child(2){
+    width:52px;
+    padding-right: 24px;
+    border-right: dotted gray;
+}
+
+
+
+
+@media (width<1200px){
+    .altsidebar{
+        float:left;
+        top:0px;
+        left:0px
+    }
+    .sidebarparent,.sidebarparent>*,#ccom,#ccom2{
+        top:9999px
+    }
+    .contents{
+        margin-left: -45px;
+    }
+}
+/*962*/
+@media(width<1062px){
+    .contents{
+        width:100vw;
+        margin-left: 0.2px;
+    }
+    section{
+        margin: 1px !important;
+    }
+    
+    .contents>*{
+        width:100%;
+        margin: 0;
+    }
+    .underc{
+        width: 100%;
+    }
+    .standardboard ,.standardboard img{
+        width:46vw;
+    }
+    .standardboard img.cofuparea{
+        width:37vw
+    }
+    .hikaruquote,.annaquote{
+        width:41%;
+        margin-right: 55%;;
+    }
+    .puzzles>img,.lessons>img{
+        width:43vw;
+        height: 43vw;
+    }
+    .puzzles>img{
+        margin-left: 2vw;
+    }
+    .lessons{
+        grid-template-columns:44vw 1fr ;
+    }
+    .puzzles,.lessons{
+        width:93vw;
+        left:-30px
+    }
+    .newsarea{
+        width: 93vw;
+    }
+    .newsarea img{
+        width:90% !important
+    }
+    .newsareachild{
+        gap:9vh 1vw
+    }
+}
+
+@media(width<962px){
+    .altsidebar{
+        top:999px;
+        left:500px
+    }
+    .contents,.underc,section{
+        width:100%;
+        left:-1.5vw;
+        top: -1.5vh;
+        width: 100vw;
+        position: relative;
+    }
+    .puzzles,.lessons{
+        left:-5vw;
+        width:100vw
+    }
+    .annaquote{
+        margin-left: 5vw;
+    }
+    .newsareachild{
+        margin-left: -4vw !important;
+    }
+    .chesstoday{
+        justify-self: center;
+    }
+    footer{
+        position: relative;
+        left: -2vw !important;
+    }
+    .underc{
+        left: 4vw !important;
+        position:relative;
+    }
+}
+@media(width<780px){
+    .standardboard,.standardboard img{
+        top:999px;
+        left:999px;
+        position: absolute;
+    }
+    .cofuparea{
+        margin-left: -5vw;
+    }
+    .playon,.playco{
+        width:55vw !important;
+        align-self: center;
+    }
+    .puzzles,.lessons{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns:0;
+        width: 100vw !important;
+        align-self: center;
+        justify-self: center;
+    }
+    .hikaruquote,.annaquote{
+        width:100vw;
+        align-self: center;
+        justify-self: center;
+        margin-left: 85vw;
+        margin-top:30vh
+    }
+
+    .annaquote{
+        margin-left: 25vw;
+    }
+    .underquote,.underquote2{
+        width:60vw;
+        align-items: center;
+    }
+    .puzzles>img,.lessons>img{
+        display: none;
+    }
+    .puzzles button , .lessons button{
+        margin-bottom: 35px;
+        margin-top: 15px;
+    }
+    .newsarea,.newsareachild{
+        width: 100vw !important;
+    }
+    .quote img,.quote2 img{
+        width:15vw;
+        height:15vw;
+        margin-left: -5vw;
+    }
+    .newsareachild{
+        display: flex;
+        flex-direction: column;
+        margin-left: 17vw !important;
+    }
+}
+@media(width<632px){
+    #playco2{
+        display: none;
+    }
+    .newsareachild{
+        margin-left: 0 !important;
+    }
+    .newsarea h2{
+        word-wrap: break-word;
+    }
+}
+
+
+
+#preloader {
+    background:#302e2b url(images/preloadimg.png) no-repeat center center;
+    z-index: 100;
+    height: 100vh;
+    width:100vw;
+    position: fixed;
+    background-size: 40%;
+}
